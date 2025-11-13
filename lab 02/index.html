@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Trip</title>
+     <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Plan Your Trip</div>
+            <ul class="nav-links" id="navlinks">
+                <li><a href="#" class="active" onclick="showPage('home')">home</a></li>
+                <li><a href="#"  onclick="showPage('about')">About</a></li>
+                <li><a href="#" onclick="showPage('login')">Login</a></li>
+            </ul>
+             <div class="menu-toggle" onclick="toggleMenu()">☰</div> 
+        </div>
+    </header>
+<!-- home page -->
+ <section id="home" class="page active">
+ <h1>Explore Mesmerizing Destinations to Enjoy your Holidays</h1>
+ <p class="intro-text">Discover the most breathtaking travel packages across India. Choose your dream destination and lets plan your trip together!</p>
+
+ <div class="package-container">
+   
+    <div class="package-card">
+        <img src="https://i.pinimg.com/1200x/6f/f8/79/6ff87976ad2ae4dc78aa82308747c022.jpg" alt="Chittorgarh fort">
+        <h3>Chittorgarh Heritage Tour</h3>
+        <p>5 Days/4 Nights - 14,999 per person</p>
+        <button class="book-btn">Book Now</button>
+    </div>
+ 
+ <div class="package-card">
+        <img src="https://i.pinimg.com/736x/25/ef/cc/25efcc78668b2b8c44ef8c3905baf21b.jpg" alt="kashmir">
+        <h3>Kashmir</h3>
+        <p>8 Days/9 Nights - 29,999 per person</p>
+        <button class="book-btn">Book Now</button>
+    </div>
+
+<div class="package-card">
+        <img src="https://i.pinimg.com/1200x/c5/a7/21/c5a7217dd11a321707a1e046f80e9020.jpg" alt="auli">
+        <h3>Auli</h3>
+        <p>3 Days/4 Nights - 10,999 per person</p>
+        <button class="book-btn">Book Now</button>
+    </div>
+
+<div class="package-card">
+        <img src="https://i.pinimg.com/736x/32/62/55/3262550eee9f61791a26b4b8dd104f69.jpg" alt="mussorie">
+        <h3>Mussorie</h3>
+        <p>6 Days/5 Nights - 13,999 per person</p>
+        <button class="book-btn">Book Now</button>
+    </div>
+
+<div class="package-card">
+        <img src="https://i.pinimg.com/736x/63/fd/61/63fd61caf07ea54298fa275a99e5b22b.jpg" alt="jaipur">
+        <h3>Jaipur</h3>
+        <p>3 Days/4 Nights - 7,999 per person</p>
+        <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="package-card">
+        <img src="https://i.pinimg.com/736x/d0/11/95/d011954f710ef6cdcd72d3a56c4a26d9.jpg" alt="dehradun">
+        <h3>Dehradun</h3>
+        <p>5 Days/4 Nights - 12,999 per person</p>
+        <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="package-card">
+        <img src="https://i.pinimg.com/736x/dc/7d/36/dc7d36e85e63fff3d6475ce4cdad6b6d.jpg" alt="sikkim">
+        <h3>Sikkim Trip</h3>
+        <p>7 Days/6 Nights - 20,999 per person</p>
+        <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="package-card">
+        <img src="https://i.pinimg.com/1200x/e9/c4/d3/e9c4d30148b1349613d24bcf0b432eee.jpg" alt="ooty">
+        <h3>Ooty Tour</h3>
+        <p>7 Days/ 7Nights - 24,999 per person</p>
+        <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="package-card">
+        <img src="https://i.pinimg.com/736x/74/d2/50/74d25076ed656152d4941ec8b26dc2ac.jpg" alt="manali">
+        <h3>Manali-Kasaul Trip</h3>
+        <p>5 Days/4 Nights - 8,999 per person</p>
+        <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="package-card">
+        <img src="https://i.pinimg.com/736x/fe/c0/fb/fec0fb1c9a2a70f4812e3fe9ddc88d86.jpg" alt="goa">
+        <h3>Goa Beach Tour</h3>
+        <p>6 Days/5 Nights - 17,999 per person</p>
+        <button class="book-btn">Book Now</button>
+    </div>
+</div>
+</section>
+
+  <!-- ABOUT PAGE -->
+  <section id="about" class="page">
+    <h1>About Plan Your Trip</h1>
+    <p>
+      Welcome to <strong>Plan Your Trip</strong>your trusted travel partner for exploring India’s hidden gems.  
+      We specialize in creating memorable travel experiences tailored to your needs, from scenic hill stations to sunny beaches.
+    </p>
+    <h2>🌍 Our Mission</h2>
+    <p>
+      To make traveling easy, affordable, and exciting for everyone.  
+      Whether you are an adventure lover or peace seeker, we have got the perfect destination for you!
+    </p>
+    <h2>✨ Why Choose Us?</h2>
+    <ul>
+      <li>Affordable, customizable travel packages</li>
+      <li>Trusted by 10,000+ happy travelers</li>
+      <li>24/7 customer support</li>
+      <li>Expert travel planners to guide your journey</li>
+    </ul>
+    <p>
+      Your next adventure is just a click away. Lets  plan your perfect trip together! 🧭
+    </p>
+  </section>
+
+  <!-- LOGIN PAGE -->
+  <section id="login" class="page">
+    <div class="login-container">
+      <h1>Login / Sign Up</h1>
+      <form class="login-form">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password" required>
+
+        <button type="submit">Login</button>
+        <p class="signup-text">Don’t have an account? <a href="#">Sign Up</a></p>
+        <button class="enquiry-btn">📞 For more enquiry, contact 921xxxxxxx</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Plan Your Trip. All Rights Reserved.</p>
+  </footer>
+ <script src="script.js"></script>
+</body>
+
+
+</html>
