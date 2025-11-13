@@ -1,1 +1,3 @@
-# Team-project-repo_nodezer0
+# lab_03
+
+This folder was created as a placeholder for future content related to lab 03.
