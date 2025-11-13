@@ -1,0 +1,154 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: #FFF5E1;
+  color: #333;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #FF6F3C;
+  color: white;
+}
+header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+header nav a.active {
+  border-bottom: 2px solid #FFD700;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px 20px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.hero .btn {
+  background: #FFD700;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Categories */
+.categories {
+  padding: 40px 20px;
+  text-align: center;
+}
+.category-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.category-cards .card {
+  background: #FF6F3C;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.category-cards .card:hover {
+  transform: scale(1.1);
+}
+
+/* Menu Items */
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.item-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+}
+.item-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.item-card button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  background: #FF6F3C;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.item-card button:hover {
+  background: #FFD700;
+  color: #333;
+}
+
+/* Cart */
+#cart-items {
+  padding: 20px;
+}
+#cart-items div {
+  background: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Login Form */
+.login-form {
+  width: 300px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+.login-form input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background: #FF6F3C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #FF6F3C;
+  color: white;
+  margin-top: 20px;
+}
+/* Sections visibility */
+.page {
+  display: none;
+  padding: 60px 20px 20px 20px;
+}
+.page.active {
+  display: block;
+}
