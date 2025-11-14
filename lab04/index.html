@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be a Blogger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="navbar">
+            <div class="logo">Be a Blogger</div>
+
+            <ul class="nav-links" id="navlinks">
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About</a></li>
+                <li><a href="#" onclick="showPage('login')">Login</a></li>
+            </ul>
+
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+    </header>
+
+    <!-- HOME PAGE -->
+    <section id="home" class="page active">
+        <h1 class="main-heading">Share Your Voice With the World</h1>
+        <p class="sub-heading">Write your thoughts, memories, and experiences as beautiful blogs.</p>
+
+        <button class="cta-btn">Create Your Blog Now</button>
+
+        <h2>Example Blogs</h2>
+
+        <div class="blog-examples">
+            <div class="blog-card">
+                <img src="https://i.pinimg.com/736x/9c/00/bd/9c00bde4269ac1f35893647ff01f5c21.jpg" alt="College day">
+                <h3>My Day at college</h3>
+                <p>A small glimpse of laughter, chaos, and memories.</p>
+            </div>
+
+            <div class="blog-card">
+                <img src="https://i.pinimg.com/1200x/fe/b2/23/feb223c6585155490ca50763d7cca265.jpg"  alt="cooking journal">
+                <h3>Cooking Journal</h3>
+                <p>Trying new recipes and loving the process.</p>
+            </div>
+
+            <div class="blog-card">
+                <img src="https://i.pinimg.com/736x/0d/f7/08/0df708caa967096f59289bfafc29f46e.jpg" alt="exam prep">
+                <h3>Exam Diaries</h3>
+                <p>Notes, pressure, deadlines — and survival.</p>
+            </div>
+
+            <div class="blog-card">
+                <img src="https://i.pinimg.com/736x/72/ac/6a/72ac6a488ed6b89f878c6f5dea0a670a.jpg" alt="birthday">
+                <h3>My Birthday Haul</h3>
+                <p>Quick sneak peak about my birthday dresses!!</p>
+            </div>
+
+            <div class="blog-card">
+                <img src="https://i.pinimg.com/736x/f0/ae/b3/f0aeb3629463c6a4ec42d92e9465d374.jpg" alt="self care">
+                <h3>Self Care Routine</h3>
+                <p>Priortizing myself over anything</p>
+            </div>
+
+            <div class="blog-card">
+                <img src="https://i.pinimg.com/736x/49/f2/29/49f2295f04b678dac12029608d5d350b.jpg" alt="diy tutorial">
+                <h3>DIY Tutorial</h3>
+                <p>Enhace your leisure time.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT PAGE -->
+    <section id="about" class="page">
+        <!-- Illustrative image at the top -->
+        <div class="about-image">
+            <img src="https://i.pinimg.com/736x/83/da/d3/83dad3c4117feaa5482681dc61fcc40a.jpg"
+                alt="blogger illustration">
+        </div>
+
+        <h1>💖 About Be a Blogger 💖</h1>
+
+        <p>
+            Be a Blogger is your little corner of the internet where thoughts, stories, and memories come alive.
+            From daily adventures to fun hobbies, you can share it all in the cutest way possible!
+        </p>
+
+        <p>
+            Writing is your happy space 🌸. Be a Blogger makes it easy and fun to express yourself, reflect on life,
+            and connect with readers who enjoy your world.
+        </p>
+
+        <ul>
+            <li>✏️ Write your own blog – share stories, ideas, and memories.</li>
+            <li>🌍 Explore blogs – discover new adventures and experiences.</li>
+            <li>📝 Build your habit – post daily or whenever inspiration strikes.</li>
+            <li>💬 Connect with others – find like-minded readers and friends.</li>
+        </ul>
+
+        <p>
+            Your stories are special, and they deserve to be shared 💕.
+            Start today, write with joy, and inspire the world—one adorable blog at a time!
+        </p>
+        <div class="about-gallery">
+    <img src="https://i.pinimg.com/1200x/a0/69/c9/a069c9148a46403d87861cfa08ca7ae7.jpg" alt="gallery">
+    <img src="https://i.pinimg.com/736x/9d/a2/b3/9da2b3b1eae79d7bedbf7025ffec16a4.jpg" alt="selfie">
+    <img src="https://i.pinimg.com/736x/74/c6/c5/74c6c562f1f29957cf5c5b701618f9de.jpg" alt="photo">
+</div>
+    </section>
+
+
+    <!-- LOGIN PAGE -->
+    <section id="login" class="page">
+        <div class="login-container">
+            <h1>Login / Sign Up</h1>
+
+            <form class="login-form">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required>
+
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password" required>
+
+                <button type="submit" class="login-btn">Login</button>
+
+                <p class="signup-text">
+                    New here? <a href="#">Sign Up</a>
+                </p>
+
+                <button class="enquiry-btn">For enquiry, contact 921xxxxxxx</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+/* NAVBAR */
+header {
+  background: #ff8fab;
+  padding: 15px 40px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* PAGES */
+.page {
+  display: none;
+  padding: 100px 40px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.page.active {
+  display: block;
+}
+
+/* HOME */
+.main-heading {
+  font-size: 2rem;
+  color: #ff5d8f;
+}
+
+.sub-heading {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.cta-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #ff5d8f;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+section#home h2 {
+    margin-top: 40px; /* adds space above the heading */
+    color: #ff3399;   /* optional: make it match your theme */
+    text-align: center; /* optional: center it */
+}
+
+
+
+.blog-examples {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  width: 25%;
+  background-color: #ffe6f0;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.blog-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-card h3 {
+    color: #ff3399;
+    margin: 10px 0 5px 0;
+}
+
+.blog-card p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* ABOUT */
+.about-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 50%; /* circular cute image */
+    background-color: #ffe6f0; /* soft baby pink behind image */
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.about-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.about-gallery img {
+    width: 20%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+
+
+/* LOGIN */
+.login-container {
+  max-width: 380px;
+  margin: auto;
+  background: #f8f8f8;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.login-container h1 {
+  color: #ff5d8f;
+  margin-bottom: 20px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.login-btn {
+  background: #ff5d8f;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.enquiry-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background: #555;
+  color: white;
+  border-radius: 20px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+  .menu-toggle { display: block; }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #ff8fab;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 12px 0;
+  }
+}
